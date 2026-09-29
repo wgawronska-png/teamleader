@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html
+lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+ 
+<meta name="description" content="Team Leader –
+kompleksowa realizacja i obsługa projektów dofinansowanych ze środków
+Unii Europejskiej.">
+  <title>Team Leader | Projekty
+Unijne</title>
+
+  <style>
+    * {
+     
+box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+ 
+  }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+   body {
+      font-family: Arial, Helvetica, sans-serif;
+    
+ color: #1f2937;
+      background: #ffffff;
+      line-height:
+1.6;
+    }
+
+    .container {
+      width: min(1120px,
+90%);
+      margin: 0 auto;
+    }
+
+    /* MENU */
+   
+header {
+      background: #ffffff;
+      position: sticky;
+
+     top: 0;
+      z-index: 100;
+      border-bottom: 1px solid
+#e5e7eb;
+    }
+
+    nav {
+      min-height: 72px;
+    
+ display: flex;
+      justify-content: space-between;
+     
+align-items: center;
+    }
+
+    .logo {
+      font-size:
+25px;
+      font-weight: 800;
+      color: #123b6d;
+     
+text-decoration: none;
+    }
+
+    .logo span {
+     
+color: #e5b500;
+    }
+
+    .nav-links {
+      display:
+flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+
+   .nav-links a {
+      color: #374151;
+      text-decoration:
+none;
+      font-weight: 600;
+    }
+
+    .nav-links
+a:hover {
+      color: #123b6d;
+    }
+
+    /* HERO */
+
+   .hero {
+      background: linear-gradient(135deg, #0d315d,
+#18588f);
+      color: white;
+      padding: 110px 0;
+   
+}
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+
+   .eyebrow {
+      display: inline-block;
+      color:
+#ffd83d;
+      font-weight: 700;
+      text-transform:
+uppercase;
+      letter-spacing: 1px;
+      margin-bottom:
+16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px,
+6vw, 68px);
+      line-height: 1.05;
+      margin-bottom:
+24px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    
+ max-width: 680px;
+      color: #e5edf5;
+      margin-bottom:
+35px;
+    }
+
+    .btn {
+      display: inline-block;
+ 
+    background: #f5c518;
+      color: #172033;
+     
+text-decoration: none;
+      padding: 15px 25px;
+     
+border-radius: 7px;
+      font-weight: 700;
+      transition:
+0.2s;
+    }
+
+    .btn:hover {
+      background: #ffda3c;
+
+     transform: translateY(-2px);
+    }
+
+    /* SEKCJE */
+
+   section {
+      padding: 85px 0;
+    }
+
+   
+.section-title {
+      text-align: center;
+      margin-bottom:
+50px;
+    }
+
+    .section-title h2 {
+      color:
+#123b6d;
+      font-size: 36px;
+      margin-bottom: 10px;
+ 
+  }
+
+    .section-title p {
+      color: #6b7280;
+     
+max-width: 700px;
+      margin: auto;
+    }
+
+    /* O NAS
+*/
+    .about {
+      background: #f7f9fc;
+    }
+
+   
+.about-content {
+      max-width: 850px;
+      margin: auto;
+
+     text-align: center;
+      font-size: 18px;
+    }
+
+  
+ /* USŁUGI */
+    .services-grid {
+      display: grid;
+    
+ grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+   
+}
+
+    .card {
+      border: 1px solid #e5e7eb;
+     
+padding: 32px;
+      border-radius: 12px;
+      background:
+white;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+
+     transform: translateY(-5px);
+      box-shadow: 0 15px 35px
+rgba(0,0,0,0.08);
+    }
+
+    .card-number {
+      width:
+45px;
+      height: 45px;
+      border-radius: 50%;
+     
+background: #eaf2fa;
+      color: #123b6d;
+      display:
+flex;
+      justify-content: center;
+      align-items:
+center;
+      font-weight: 800;
+      margin-bottom: 20px;
+ 
+  }
+
+    .card h3 {
+      color: #123b6d;
+     
+margin-bottom: 12px;
+    }
+
+    .card p {
+      color:
+#6b7280;
+    }
+
+    /* PROCES */
+    .process {
+     
+background: #123b6d;
+      color: white;
+    }
+
+   
+.process .section-title h2 {
+      color: white;
+    }
+
+ 
+  .process .section-title p {
+      color: #d5dfeb;
+    }
+
+
+   .steps {
+      display: grid;
+      grid-template-columns:
+repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .step {
+  
+   text-align: center;
+      padding: 20px;
+    }
+
+   
+.step-number {
+      margin: 0 auto 18px;
+      width: 55px;
+
+     height: 55px;
+      background: #f5c518;
+      color:
+#123b6d;
+      border-radius: 50%;
+      display: flex;
+    
+ justify-content: center;
+      align-items: center;
+     
+font-size: 21px;
+      font-weight: 800;
+    }
+
+    .step
+h3 {
+      margin-bottom: 8px;
+    }
+
+    .step p {
+  
+   color: #d5dfeb;
+    }
+
+    /* KONTAKT */
+   
+.contact-box {
+      max-width: 850px;
+      margin: auto;
+ 
+    padding: 50px;
+      background: #f7f9fc;
+     
+border-radius: 15px;
+      text-align: center;
+    }
+
+   
+.contact-box h2 {
+      color: #123b6d;
+      font-size: 34px;
+
+     margin-bottom: 15px;
+    }
+
+    .contact-box p {
+   
+  color: #6b7280;
+      margin-bottom: 25px;
+    }
+
+   
+.contact-details {
+      margin-bottom: 30px;
+     
+font-weight: 600;
+    }
+
+    /* FOOTER */
+    footer {
+
+     background: #0b2747;
+      color: #b9c6d5;
+      padding:
+35px 0;
+      text-align: center;
+    }
+
+    footer
+strong {
+      color: white;
+    }
+
+    /* MOBILE */
+ 
+  @media (max-width: 800px) {
+      .nav-links {
+       
+display: none;
+      }
+
+      .hero {
+        padding:
+80px 0;
+      }
+
+      .hero h1 {
+        font-size:
+42px;
+      }
+
+      .services-grid,
+      .steps {
+  
+     grid-template-columns: 1fr;
+      }
+
+      .contact-box
+{
+        padding: 35px 20px;
+      }
+    }
+ 
+</style>
+</head>
+
+<body>
+
+<header>
+
+ <div class="container">
+    <nav>
+     
+<a href="#" class="logo">TEAM
+<span>LEADER</span></a>
+
+      <ul
+class="nav-links">
+        <li><a
+href="#onas">O nas</a></li>
+       
+<li><a href="#uslugi">Usługi</a></li>
+
+       <li><a href="#proces">Jak
+działamy</a></li>
+        <li><a
+href="#kontakt">Kontakt</a></li>
+     
+</ul>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+
+ <!-- HERO -->
+  <section class="hero">
+ 
+  <div class="container">
+      <div
+class="hero-content">
+
+        <span
+class="eyebrow">Fundusze Europejskie</span>
+
+
+       <h1>Od pomysłu do skutecznie zrealizowanego
+projektu.</h1>
+
+        <p>
+          Team
+Leader wspiera firmy i instytucje w przygotowaniu,
+         
+realizacji oraz rozliczaniu projektów współfinansowanych
+         
+ze środków Unii Europejskiej.
+        </p>
+
+        <a
+href="#kontakt" class="btn">Porozmawiajmy o
+projekcie</a>
+
+      </div>
+    </div>
+
+ </section>
+
+
+  <!-- O NAS -->
+  <section
+id="onas" class="about">
+    <div
+class="container">
+
+      <div
+class="section-title">
+        <h2>Team
+Leader</h2>
+        <p>Wsparcie na każdym etapie
+projektu.</p>
+      </div>
+
+      <div
+class="about-content">
+        <p>
+         
+Pomagamy przedsiębiorcom, organizacjom oraz instytucjom
+         
+skutecznie korzystać z możliwości oferowanych przez
+         
+Fundusze Europejskie. Łączymy wiedzę dotyczącą programów
+         
+dotacyjnych z praktycznym doświadczeniem w zarządzaniu
+         
+projektami.
+        </p>
+      </div>
+
+   
+</div>
+  </section>
+
+
+  <!-- USŁUGI -->
+
+ <section id="uslugi">
+    <div
+class="container">
+
+      <div
+class="section-title">
+        <h2>Nasze
+usługi</h2>
+        <p>
+          Kompleksowa
+obsługa projektów finansowanych ze środków
+          Unii
+Europejskiej.
+        </p>
+      </div>
+
+    
+ <div class="services-grid">
+
+        <div
+class="card">
+          <div
+class="card-number">01</div>
+         
+<h3>Pozyskiwanie dofinansowania</h3>
+          <p>
+
+           Analizujemy dostępne programy i pomagamy wybrać
+       
+    odpowiednie źródło finansowania dla planowanej inwestycji.
+   
+      </p>
+        </div>
+
+        <div
+class="card">
+          <div
+class="card-number">02</div>
+         
+<h3>Przygotowanie projektów</h3>
+          <p>
+
+           Wspieramy przygotowanie koncepcji projektu,
+           
+dokumentacji oraz wniosku o dofinansowanie.
+          </p>
+
+       </div>
+
+        <div class="card">
+
+         <div class="card-number">03</div>
+ 
+        <h3>Realizacja projektów</h3>
+          <p>
+
+           Pomagamy prowadzić projekt zgodnie z harmonogramem,
+   
+        budżetem oraz wymaganiami programu.
+          </p>
+
+       </div>
+
+        <div class="card">
+
+         <div class="card-number">04</div>
+ 
+        <h3>Rozliczanie dotacji</h3>
+          <p>
+
+           Wspieramy przygotowanie dokumentacji rozliczeniowej,
+  
+         wniosków o płatność oraz raportów.
+          </p>
+
+       </div>
+
+        <div class="card">
+
+         <div class="card-number">05</div>
+ 
+        <h3>Monitoring projektu</h3>
+          <p>
+
+           Kontrolujemy realizację wskaźników, harmonogramu
+      
+     i zobowiązań wynikających z umowy o dofinansowanie.
+         
+</p>
+        </div>
+
+        <div
+class="card">
+          <div
+class="card-number">06</div>
+         
+<h3>Doradztwo</h3>
+          <p>
+           
+Pomagamy podejmować decyzje dotyczące finansowania
+           
+inwestycji oraz wykorzystania dostępnych programów UE.
+         
+</p>
+        </div>
+
+      </div>
+   
+</div>
+  </section>
+
+
+  <!-- PROCES -->
+
+ <section id="proces" class="process">
+ 
+  <div class="container">
+
+      <div
+class="section-title">
+        <h2>Jak
+działamy?</h2>
+        <p>Prosty proces prowadzący od
+pomysłu do realizacji.</p>
+      </div>
+
+     
+<div class="steps">
+
+        <div
+class="step">
+          <div
+class="step-number">1</div>
+         
+<h3>Analiza</h3>
+          <p>Poznajemy Twój
+pomysł i potrzeby inwestycyjne.</p>
+        </div>
+
+
+       <div class="step">
+          <div
+class="step-number">2</div>
+         
+<h3>Finansowanie</h3>
+          <p>Wybieramy
+odpowiedni program i źródło dofinansowania.</p>
+       
+</div>
+
+        <div class="step">
+   
+      <div class="step-number">3</div>
+     
+    <h3>Realizacja</h3>
+          <p>Wspieramy
+prawidłową realizację zaplanowanych działań.</p>
+       
+</div>
+
+        <div class="step">
+   
+      <div class="step-number">4</div>
+     
+    <h3>Rozliczenie</h3>
+          <p>Pomagamy
+poprawnie zakończyć i rozliczyć projekt.</p>
+       
+</div>
+
+      </div>
+
+    </div>
+ 
+</section>
+
+
+  <!-- KONTAKT
+ -->
+  <section
+id="kontakt">
+    <div class="container">
+
+
+     <div class="contact-box">
+
+       
+<h2>Masz pomysł na projekt?</h2>
+
+        <p>
+
+         Skontaktuj się z nami. Sprawdzimy możliwości jego
+       
+  realizacji z wykorzystaniem Funduszy Europejskich.
+       
+</p>
+
+        <div class="contact-details">
+
+         <p>📞 +48 000 000 000</p>
+         
+<p>✉ biuro@teamleader.pl</p>
+        </div>
+
+
+       <a href="mailto:biuro@teamleader.pl"
+class="btn">
+          Napisz do nas
+       
+</a>
+
+      </div>
+
+    </div>
+ 
+</section>
+
+</main>
+
+
+<footer>
+ 
+<div class="container">
+    <p>
+      ©
+2026 <strong>Team Leader</strong> · Projekty i
+Fundusze Europejskie
+    </p>
+ 
+</div>
+</footer>
+
+</body>
+</html>
